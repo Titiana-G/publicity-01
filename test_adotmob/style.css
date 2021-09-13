@@ -1,0 +1,253 @@
+#body{
+    background-color: #4FACDB;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   PLAN 1                                   */
+/* -------------------------------------------------------------------------- */
+
+
+#div_logo{
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+#logo{
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    top: 100px;
+    left: 135px;
+    animation: slideLogo 3s ease 4s both;
+    -webkit-animation: slideLogo 3s ease 4s both;
+}
+
+#div_text1{
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 23px;
+    position: absolute;
+    top: 250px;
+    left: 85px;
+}
+
+#text1_1{
+    margin: 0;
+    animation: move 1s ease 0s;
+    -webkit-animation: move 1s ease 0s;
+}
+
+#text1_2{
+    margin: 0;
+    animation: move 1.5s ease 0s;
+    -webkit-animation: move 1.5s ease 0s;
+}
+#text1_3{
+    margin: 0;
+    animation: move 2s ease 0s;
+    -webkit-animation: move 2s ease 0s;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   PLAN 2                                   */
+/* -------------------------------------------------------------------------- */
+
+
+#div_text2{
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+#text2_1{
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    animation: move 1s ease 0s;
+    -webkit-animation: move 1s ease 0s;
+}
+
+#text2_2{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
+    margin: 0;
+    animation: move 1.5s ease 0s;
+    -webkit-animation: move 1.5s ease 0s;
+}
+
+#text2_3{
+    text-align: center;
+    font-size: 80px;
+    margin: 0;
+    animation: move 1.5s ease 0s;
+    -webkit-animation: move 1.5s ease 0s;
+}
+
+#text2_4{
+    font-size: 10px;
+    padding-left: 15px;
+    text-transform: lowercase;
+    text-align: justify;
+    animation: opacity 5s;
+    -webkit-animation: opacity 5s;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   PLAN 3                                   */
+/* -------------------------------------------------------------------------- */
+
+
+#div_text3{
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#text3_1{
+    font-size: 23px;
+    margin: 0;
+    animation: move 1s ease 0s;
+    -webkit-animation: move 1s ease 0s;
+}
+
+#text3_2{
+    font-size: 50px;
+    margin: 0;
+    animation: move 1s ease 0s;
+    -webkit-animation: move 1s ease 0s;
+}
+
+#text3_3{
+    font-size: 23px;
+    margin: 0;
+    animation: move 2s ease 0s;
+    -webkit-animation: move 2s ease 0s;
+}
+
+#text3_4{
+    font-size: 50px;
+    margin: 0;
+    animation: move 2s ease 0s;
+    -webkit-animation: move 2s ease 0s;
+}
+
+#text3_5{
+    font-size: 10px;
+    padding-left: 15px;
+    text-transform: lowercase;
+    text-align: justify;
+    padding-top: 15px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   PLAN 4                                   */
+/* -------------------------------------------------------------------------- */
+
+
+#div_text4{
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#text4_1{
+    font-size: 17px;
+    margin: 0;
+    animation: move 2s ease 0s;
+    -webkit-animation: move 2s ease 0s;
+}
+
+#text4_2{
+    font-size: 13px;
+    margin: 0;
+    animation: move 1s ease 0s;
+    -webkit-animation: move 1s ease 0s;
+    padding: 5px;
+    border: 2px solid #FFFFFF;
+}
+
+#plan4_1{
+    margin-right: 80px;
+    margin-left: 80px;
+    padding-top: 40px;
+}
+
+#icon{
+    padding-right: 10px;
+}
+
+#map{
+    width:100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    animation: slideDown 3s ease 0s both;
+    -webkit-animation: slideDown 3s ease 0s both;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  ANIMATION                                 */
+/* -------------------------------------------------------------------------- */
+
+
+@keyframes move{
+    from{
+        margin-left: 100%;
+        width: 100%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown{
+    from{
+        bottom:-300px;
+        left: 0;
+    }
+    to{
+        bottom: 0px;
+        left: 0;
+    }
+}
+
+@keyframes slideLogo{
+    from{
+        top: 100px;
+        left: 135px;
+    }
+    to{
+        top: 15px;
+        left: 15px;
+        width: 60px;
+        height: 60px;
+    }
+}
+
