@@ -1,0 +1,128 @@
+/* -------------------------------------------------------------------------- */
+/*                                   IMPORT                                   */
+/* -------------------------------------------------------------------------- */
+
+@import "./mixin.scss";
+
+/* -------------------------------------------------------------------------- */
+/*                                    STYLE                                   */
+/* -------------------------------------------------------------------------- */
+
+#body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    min-height: 100%;
+    background-color: #000000;
+    text-align: center;
+
+    #div_logo {
+        #logo {
+            width: 25%;
+            padding: 10px;
+        }
+    }
+
+    #div_video {
+        border: none;
+
+        #video {
+            max-width: 100%;
+            min-height: auto;
+            animation: video 2s ease-out 19s;
+        }
+    }
+
+    #div_promo {
+        margin-bottom: 128px !important;
+        #promo_1 {
+            width: 80%;
+            height: auto;
+            animation: slide 1.5s ease 20s;
+        }
+    }
+
+    #div_arrow{
+        #arrow {
+            @include arrow;
+            animation: bounce 0.3s ease infinite alternate;
+        }
+    }
+
+    #div_footer2 {
+        #footer2 {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            animation: slide 2s ease 0s;
+        }
+    }
+
+    #div_2 {
+            animation: slide 1s ease 0s;
+
+        #div_text {
+            padding-bottom: 10px;
+            #img_text {
+                width: 70%;
+            }
+        }
+        
+        #maps {
+            min-height: 450px;
+            #iframe {
+                width: 150px;
+                height: 150px;
+                border: none;
+                border-radius: 75px;
+            }
+        }
+    }
+
+    #div_footer1 {
+        position: fixed;
+        z-index: 1;
+
+        #footer1{
+            max-width: 100%;
+            position: absolute;
+            z-index: 2;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  ANIMATION                                 */
+/* -------------------------------------------------------------------------- */
+
+
+@keyframes bounce {
+    from {
+        top: 87%;
+    }
+    to {
+        top: 88%;
+    }
+}
+
+@keyframes slide {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes video {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.1);
+    }
+}
+
